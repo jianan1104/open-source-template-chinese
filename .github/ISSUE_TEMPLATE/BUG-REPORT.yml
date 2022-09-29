@@ -1,5 +1,5 @@
 name: 🐞 Bug
-description: File a bug/issue
+description: 提交錯誤/問題
 title: "[BUG] <填寫錯誤標題>"
 labels: [bug, Needs Triage]
 body:
