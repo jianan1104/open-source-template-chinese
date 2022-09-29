@@ -4,6 +4,7 @@ title: "[BUG] <填寫錯誤標題>"
 labels: [bug, Needs Triage]
 body:
 - type: checkboxes
+  id: exist-problem
   attributes:
     label: 清單中是否已存在這個問題?
     description: 請搜尋以查看您遇到的錯誤是否已存在問題。
@@ -11,18 +12,21 @@ body:
     - label: 我已經搜尋了現有的問題！
       required: true
 - type: textarea
+  id: now-behavior
   attributes:
     label: 當前的行為
     description: 簡明扼要地描述您正在經歷的事情。
   validations:
     required: false
 - type: textarea
+  id: expect-behavior
   attributes:
     label: 預期行為
     description: 請對您期望發生的事情的簡明描述。
   validations:
     required: false
 - type: textarea
+  id: error-step
   attributes:
     label: 重現錯誤的步驟
     description: 描述重現出現錯誤行為的步驟。
@@ -34,6 +38,7 @@ body:
   validations:
     required: false
 - type: textarea
+  id: env
   attributes:
     label: 使用環境
     description: |
@@ -49,6 +54,7 @@ body:
   validations:
     required: false
 - type: textarea
+  id: information
   attributes:
     label: 有什麼要補充的嗎?
     description: |
