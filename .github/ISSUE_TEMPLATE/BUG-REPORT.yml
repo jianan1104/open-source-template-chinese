@@ -1,41 +1,41 @@
 name: 🐞 Bug
 description: File a bug/issue
-title: "[BUG] <title>"
-labels: [Bug, Needs Triage]
+title: "[BUG] <填寫錯誤標題>"
+labels: [bug, Needs Triage]
 body:
 - type: checkboxes
   attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the bug you encountered.
+    label: 清單中是否已存在這個問題?
+    description: 請搜尋以查看您遇到的錯誤是否已存在問題。
     options:
-    - label: I have searched the existing issues
+    - label: 我已經搜尋了現有的問題！
       required: true
 - type: textarea
   attributes:
-    label: Current Behavior
-    description: A concise description of what you're experiencing.
+    label: 當前的行為
+    description: 簡明扼要地描述您正在經歷的事情。
   validations:
     required: false
 - type: textarea
   attributes:
-    label: Expected Behavior
-    description: A concise description of what you expected to happen.
+    label: 預期行為
+    description: 請對您期望發生的事情的簡明描述。
   validations:
     required: false
 - type: textarea
   attributes:
-    label: Steps To Reproduce
-    description: Steps to reproduce the behavior.
+    label: 重現錯誤的步驟
+    description: 描述重現出現錯誤行為的步驟。
     placeholder: |
-      1. In this environment...
-      2. With this config...
-      3. Run '...'
-      4. See error...
+      1. 在某個環境下或頁面...
+      2. 有了這些設定...
+      3. 點擊或執行 '...'
+      4. 看見了這個錯誤...
   validations:
     required: false
 - type: textarea
   attributes:
-    label: Environment
+    label: 使用環境
     description: |
       examples:
         - **OS**: Ubuntu 20.04
@@ -50,10 +50,10 @@ body:
     required: false
 - type: textarea
   attributes:
-    label: Anything else?
+    label: 有什麼要補充的嗎?
     description: |
-      Links? References? Anything that will give us more context about the issue you are encountering!
+      連結？參考資料？任何可以為我們提供有關您遇到的問題的更多背景訊息的內容！
 
-      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+      提示：您可以添加螢幕截圖或錯誤日誌內容。
   validations:
     required: false
